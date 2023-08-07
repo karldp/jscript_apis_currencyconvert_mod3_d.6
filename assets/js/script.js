@@ -40,6 +40,7 @@ const getCurrencyValues = (data) => {
 // Getting the dates (check after)
 const getDates = (data) => {
     return data.map((item) => new Date(item.fecha).toLocaleDateString("en-US"));
+    /* return data.slice(0, 10).map((item) => new Date(item.fecha).toLocaleDateString("en-US")); */ // Alba esta es la opción de 10 últimos días en caso que fuera obligatorio. Preferí dejar la que nos diste tú en la clase porque así se ve mejor los cambios del gráfico.
 };
 
 
