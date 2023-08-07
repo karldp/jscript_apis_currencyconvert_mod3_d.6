@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/imgs/favicon/icons8-coin-ios-16-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/imgs/favicon/icons8-coin-ios-16-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./assets/imgs/favicon/icons8-coin-ios-16-96.png">
+    <link rel="stylesheet" href="./assets/css/styles..css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <section>
+        <h1>CURRENCY CONVERTER</h1>
+        <div class="container">
+            <form id="calculator" class="box">
+                <h2>CHILEAN PESOS</h2>
+                <input type="text" name="value">
+                <p>currency to convert</p>
+                <select name="currency">
+                    <option value="">Choose currency</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="euro">Euro</option>
+                    <option value="dolar">Dolar</option>
+                </select>
+                <button type="submit" class="search">Search</button>
+                <div class="change">
+                    <h3 id="total-value"></h3>
+                </div>
+            </form>
+        </div>
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
